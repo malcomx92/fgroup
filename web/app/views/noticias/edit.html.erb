@@ -1,0 +1,12 @@
+<h1>Editing noticia</h1>
+
+<% form_for(@noticia) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @noticia %> |
+<%= link_to 'Back', noticias_path %>
