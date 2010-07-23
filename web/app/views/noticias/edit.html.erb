@@ -1,0 +1,28 @@
+<h1>Editing noticia</h1>
+
+<% form_for(@noticia) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titular %><br />
+    <%= f.text_field :titular %>
+  </p>
+  <p>
+    <%= f.label :cuerpo %><br />
+    <%= f.text_area :cuerpo %>
+  </p>
+  <p>
+    <%= f.label :autor %><br />
+    <%= f.text_field :autor %>
+  </p>
+  <p>
+    <%= f.label :image_url %><br />
+    <%= f.text_field :image_url %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @noticia %> |
+<%= link_to 'Back', noticias_path %>

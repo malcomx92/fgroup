@@ -1,0 +1,23 @@
+<p>
+  <b>Titular:</b>
+  <%=h @noticia.titular %>
+</p>
+
+<p>
+  <b>Cuerpo:</b>
+  <%=h @noticia.cuerpo %>
+</p>
+
+<p>
+  <b>Autor:</b>
+  <%=h @noticia.autor %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @noticia.image_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_noticia_path(@noticia) %> |
+<%= link_to 'Back', noticias_path %>
