@@ -1,26 +1,34 @@
-<h1>Listing noticias</h1>
+<div id="product-list">
+<h1>Noticias</h1>
 
 <table>
-  <tr>
-    <th>Titular</th>
-    <th>Cuerpo</th>
-    <th>Autor</th>
-    <th>Image url</th>
-  </tr>
+  <% for noticia in @noticias %>
+	<tr class="<%= cycle('list-line-odd', 'list-line-even')%>">
+	
+		<td>
+			<%=image_tag noticia.image_url, :class => 'list-image' %> 
+		</td>
 
-<% @noticias.each do |noticia| %>
-  <tr>
-    <td><%=h noticia.titular %></td>
-    <td><%=h noticia.cuerpo %></td>
-    <td><%=h noticia.autor %></td>
-    <td><%=h noticia.image_url %></td>
-    <td><%= link_to 'Show', noticia %></td>
-    <td><%= link_to 'Edit', edit_noticia_path(noticia) %></td>
-    <td><%= link_to 'Destroy', noticia, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+		<td class="list-description">
+			<dl>
+				<dt><%=h noticia.titular %></dt>
+				<dd><%=h truncate(noticia.cuerpo.gsub(/<.*?>/,''), 80) %> </dd>
+				<dd>Autor: <%=h noticia.autor %></dt>
+			</dl>	
+		</td>
+	
+		<td class="list-actions">
+			<%= link_to 'Mostrar', noticia %><br/>
+			<%= link_to 'Editar', edit_noticia_path(noticia) %><br/>
+			<%= link_to 'Eliminar', noticia,
+				:confirm => 'Está seguro?',
+				:method => :delete %>
+		</td>
+	</tr>
+
+<%end%>
 </table>
-
+</div>
 <br />
 
-<%= link_to 'New noticia', new_noticia_path %>
+<%= link_to 'Nueva noticia', new_noticia_path %>
