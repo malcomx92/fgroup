@@ -1,0 +1,2 @@
+module FiuraHelper
+end

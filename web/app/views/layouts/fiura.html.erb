@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html>
+	<head>
+		<title>FIURA</title>
+		<%= stylesheet_link_tag "main_style" , :media => "all" %>
+	</head>
+	<body id="store">
+	<div id="main">
+	<div id="banner">
+
+		<!--<%= image_tag("logo.png" ) %>-->
+		<%= @page_title || "F I U R A" %>
+		<div id="subtitle">Preparados... Porque nada espera!</div>
+
+<div id=player>
+<object type="application/x-shockwave-flash" data="../player_mp3_multi.swf" width="200" height="100">
+<param name="movie" value="../player_mp3_multi.swf" />
+<param name="wmode" value="transparent" />
+<param name="FlashVars" value="mp3=mp3/blues.mp3|mp3/blues.mp3&title=Caballos y Cuervos|Norte &bgcolor1=000000&bgcolor2=000000&
+buttoncolor=999999&buttonovercolor=999999&
+slidercolor1=ffffff&slidercolor2=ffffff&
+sliderovercolor=ffffff&textcolor=ffffff&
+playlistcolor=999999&currentmp3color=ffffff&
+scrollbarcolor=999999&scrollbarovercolor=0" />
+</object>
+</div>
+
+	</div>
+
+
+	<div id="menu">
+	<center>
+		<a href="http://www....">I N I C I O</a>&nbsp; | &nbsp;
+		<a href="http://www....">N O T I C I A S</a> &nbsp; | &nbsp;
+		<a href="http://www....">C O N C I E R T O S</a>  &nbsp;| &nbsp; 
+		<a href="http://www..../faq">B I O G R A F Í A</a>  &nbsp;| &nbsp; 
+		<a href="http://www..../news">D I S C O G R A F Í A</a>  &nbsp;| &nbsp;
+		<a href="http://www....">M U L T I M E D I A</a> &nbsp; | &nbsp;
+		<a href="http://www....">T I E N D A</a>  &nbsp;| &nbsp; 		
+		<a href="http://www..../contact">C O N T A C T O</a>  &nbsp;| &nbsp;
+				<a href="http://www....">E N L A C E S</a>
+	</center>	
+	</div>
+	<div id="columnas">
+		<div id="columna_izq">
+			<%= yield :layout %>
+		</div>
+	
+		<div id="columna_centro">
+			<!--<%= yield :layout %>-->
+<h1>Ú L T I M O S <br><b>T W E E T S</b></h1>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#000000',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#d9ebea'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('dr_nexus').start();
+</script>
+		</div>
+
+		<div id="columna_der">
+			<!--<%= yield :layout %>-->
+<h1>Ú L T I M A S <br><b>I M Á G E N E S</b></h1>
+		</div>
+	</div>	
+	
+	<div id="footer">
+		Copyright 2010	
+	</div>
+	
+	</div>
+</body>
+</html>
+

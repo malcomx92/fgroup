@@ -1,0 +1,11 @@
+<h1>Ú L T I M A S <br><b>N O T I C I A S</b></h1>
+
+<% for noticia in @noticias -%>
+	<div class="entry">
+		<%= image_tag(noticia.image_url) %>
+		<h3><%=h noticia.titular %></h3>
+		<%= noticia.cuerpo %><br>
+		<b>Escrito por: </b> <%= noticia.autor %>
+	</div>
+<%end%>
+

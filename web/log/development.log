@@ -8431,3 +8431,33 @@ Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-08 10:53:31) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-08 11:09:58) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-08 15:38:00) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/fiura]
