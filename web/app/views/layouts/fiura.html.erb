@@ -14,16 +14,29 @@
 		<div id="subtitle">Preparados... Porque nada espera!</div>
 
 <div id=player>
-<object type="application/x-shockwave-flash" data="../player_mp3_multi.swf" width="200" height="100">
+<!--<object type="application/x-shockwave-flash" data="../player_mp3_multi.swf" width="200" height="100">
 <param name="movie" value="../player_mp3_multi.swf" />
 <param name="wmode" value="transparent" />
-<param name="FlashVars" value="mp3=mp3/blues.mp3|mp3/blues.mp3&title=Caballos y Cuervos|Norte &bgcolor1=000000&bgcolor2=000000&
+<param name="FlashVars" value="mp3=mp3/blues.mp3|mp3/blues.mp3&title=Caballos y Cuervos|Norte &bgcolor1=333333&bgcolor2=333333&
 buttoncolor=999999&buttonovercolor=999999&
 slidercolor1=ffffff&slidercolor2=ffffff&
 sliderovercolor=ffffff&textcolor=ffffff&
 playlistcolor=999999&currentmp3color=ffffff&
 scrollbarcolor=999999&scrollbarovercolor=0" />
-</object>
+</object>-->
+<%= mp3_player "/mp3s_folder/test.mp3" "/mp3s_folder/test.mp3", 
+:width => 205, 
+:bg => "333333", 
+:left_bg => "333333", 
+:right_bg => "333333", 
+:left_icon => "ffffff", 
+:right_icon => "ffffff",
+:text => "ffffff",
+:slider => "ff0000",
+:loader => "ffffff",
+:track => "333333",
+:border => "333333"
+ %>
 </div>
 
 	</div>
@@ -61,25 +74,26 @@ new TWTR.Widget({
   height: 300,
   theme: {
     shell: {
-      background: '#000000',
+      background: '#333333',
       color: '#ffffff'
     },
     tweets: {
-      background: '#000000',
+      background: '#333333',
       color: '#ffffff',
-      links: '#d9ebea'
+      links: '#bbdce8'
     }
   },
   features: {
     scrollbar: false,
     loop: false,
-    live: true,
+    live: false,
     hashtags: true,
     timestamp: true,
     avatars: false,
     behavior: 'all'
   }
 }).render().setUser('dr_nexus').start();
+</script>
 </script>
 		</div>
 

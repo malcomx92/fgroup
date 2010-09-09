@@ -1,5 +1,9 @@
 /* Global styles */
 
+body {
+padding: -3px; !important
+}
+
 /* START:notice */
 #notice {
   border: 2px solid red;
@@ -69,17 +73,18 @@ h1 {
 /* Styles for main page */
 
 #main{
-	margin: 0 auto;
+	margin: -8px auto;
 	width: 1200px;
   font: 16px "Arial", sans-serif;
 color: white;
-/*background: lightblue;*/
 }
 #menu{
+  background-image: url('../images/background4px.png');
+  background-repeat: repeat;
+
 	/*margin-top:2px;*/
 	padding-top: 25px;
 	padding-bottom: 8px;
-	background: black;
   	font:small-caps 14px "Arial", sans-serif;
   font-weight: bold;
   	color: white;	
@@ -99,8 +104,8 @@ text-decoration: underline;
 }
 
 #banner {
-/*  background: #9c9;*/
-  background-image: url('../images/fiura_stencil_base2.png');
+
+  background-image: url('../images/fiura_stencil_paint2.png');
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 20px;
@@ -109,7 +114,7 @@ text-decoration: underline;
   /*border-bottom: 2px solid;*/
   font: small-caps 60px/40px "Arial", sans-serif;
   font-weight: bold;
-  color: white;
+  color: #333333;
   text-align: right;
 }
 
@@ -124,14 +129,17 @@ right: 10px;
 }
 
 #columnas {
-  background: #eeeeee;
+  background-image: url('../images/background4px.png');
+  background-repeat: repeat;
+  border-left: 7px #ff0000;
+  border-right: 7px #ff0000;
   width: 1200px;
 }
 
 #columna_izq {
   float: left;
   padding: 1em;
-  background: black;
+
   width: 600px;
   height: 00px;
 }
@@ -139,7 +147,7 @@ right: 10px;
 #columna_centro {
   float: left;
   padding: 1em;
-  background: black;
+
   width: 252px;
   height: 500px;
 }
@@ -147,13 +155,14 @@ right: 10px;
 #columna_der {
   float: left;
   padding: 1em;
-  background: black;
+
   width: 252px;
   height: 500px;
 }
 
 #footer {
-  background: #000000;
+  background-image: url('../images/background4px.png');
+  background-repeat: repeat;
   /*background-image: url('../images/fiura_footer.png');*/
   font: "Arial", sans-serif;
   color: #ffffff;
@@ -177,12 +186,13 @@ right: 10px;
 /* An entry in the store catalog */
 
 #store {
+padding: -3px; !important
 /*background: lightblue;*/
-  background-image: url('../images/Sea_sky.jpg');
+  /*background-image: url('../images/Sea_sky.jpg');*/
 }
 #store  .entry {
   overflow: auto;
-  margin-top: 1em;
+ /* margin-top: 1em;*/	
   border-bottom: 1px #fff;
 }
 

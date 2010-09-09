@@ -21,7 +21,7 @@ development:
   database: fiura_web
   pool: 5
   username: root 
-  password: ouo#4510 
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
 
