@@ -10342,6 +10342,7 @@ ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_fol
 >>>>>>> c083480512e392937e021d0843d3d6d14aff28f7
 
 Rendering rescues/layout (not_found)
+<<<<<<< HEAD
 /!\ FAILSAFE /!\  Fri Sep 10 15:57:46 +0200 2010
   Status: 500 Internal Server Error
   Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
@@ -10420,10 +10421,33 @@ ActionController::RoutingError (No route matches "/images/-" with {:method=>:get
   
 
 Rendering rescues/layout (not_found)
+=======
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 10:42:54) [GET]
+  [4;36;1mNoticia Load (22.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 174ms (View: 117, DB: 23) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:41:23) [GET]
+  [4;36;1mNoticia Load (23.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 142ms (View: 94, DB: 25) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 15:59:54) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
@@ -10440,40 +10464,96 @@ ActionController::RoutingError (No route matches "/images/-" with {:method=>:get
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:42:33) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 55ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:44:15) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:44:29) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+<<<<<<< HEAD
 Processing FiuraController#index (for 192.168.0.159 at 2010-09-10 16:02:50) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 8ms (View: 3, DB: 2) | 200 OK [http://192.168.0.158/fiura]
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:44:39) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 192.168.0.159 at 2010-09-10 16:02:51) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:44:53) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:06:24) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (232.9ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 241ms (View: 4, DB: 234) | 200 OK [http://localhost/fiura]
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:45:05) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:06:25) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
@@ -10490,20 +10570,45 @@ Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 13ms (View: 4, DB: 5) | 200 OK [http://192.168.0.158/fiura]
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:45:13) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 192.168.0.159 at 2010-09-10 16:06:53) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
+=======
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:45:17) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
 
 Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:14:05) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
@@ -10530,20 +10635,64 @@ Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 11ms (View: 3, DB: 2) | 200 OK [http://localhost/fiura]
+=======
+Processing ApplicationController#index (for 192.168.0.158 at 2010-09-10 16:45:18) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:45:36) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:16:18) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
+=======
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:45:52) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
 
 Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:16:23) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
@@ -10558,42 +10707,102 @@ Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:16:24) [G
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:46:11) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:46:16) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
 
 Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 192.168.0.159 at 2010-09-10 16:16:51) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 10ms (View: 3, DB: 2) | 200 OK [http://192.168.0.158/fiura]
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:46:31) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 192.168.0.159 at 2010-09-10 16:16:51) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
+=======
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:46:35) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
 
 Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:18:36) [GET]
 
 ActionController::RoutingError (No route matches "/images/fiura_stencil_paint2.p" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:46:47) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:18:41) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
@@ -10610,70 +10819,177 @@ ActionController::RoutingError (No route matches "/images/-" with {:method=>:get
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:46:49) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:46:54) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:47:07) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:20:12) [GET]
   [4;36;1mNoticia Load (1.5ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 12ms (View: 3, DB: 4) | 200 OK [http://localhost/fiura]
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:47:09) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:20:13) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:47:18) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://192.168.0.159/fiura]
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:47:22) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:23:16) [GET]
 
 ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
   
+=======
+Processing ApplicationController#index (for 192.168.0.158 at 2010-09-10 16:47:23) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
 
 Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:25:31) [GET]
 
 ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:47:41) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:31:54) [GET]
 
 ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
   
+=======
+Processing ApplicationController#index (for 192.168.0.158 at 2010-09-10 16:47:43) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
 
 Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:38:02) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 30ms (View: 22, DB: 2) | 200 OK [http://localhost/fiura]
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:51:27) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:38:03) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
@@ -10690,20 +11006,88 @@ Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 10ms (View: 4, DB: 2) | 200 OK [http://localhost/fiura]
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:51:30) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:51:37) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:51:41) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:55:16) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:55:24) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 52ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:38:24) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:56:40) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/fiura]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:56:47) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:38:37) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
@@ -10720,10 +11104,39 @@ ActionController::RoutingError (No route matches "/images/-" with {:method=>:get
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:56:51) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:58:24) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:58:32) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+<<<<<<< HEAD
 Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:39:01) [GET]
   [4;36;1mNoticia Load (0.4ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
 Rendering template within layouts/fiura
@@ -10750,13 +11163,78 @@ Rendering template within layouts/fiura
 Rendering fiura/index
   [4;35;1mNoticia Columns (6.9ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
 Completed in 25ms (View: 11, DB: 9) | 200 OK [http://localhost/fiura]
+=======
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:58:37) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 192.168.0.158 at 2010-09-10 16:58:46) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
+Processing FiuraController#index (for 192.168.0.158 at 2010-09-10 16:58:53) [GET]
+  [4;36;1mNoticia Load (0.1ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://192.168.0.159/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2010-09-10 16:39:38) [GET]
 
 ActionController::RoutingError (No route matches "/images/-" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+=======
+Processing ApplicationController#index (for 192.168.0.158 at 2010-09-10 16:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/mp3s_folder/test.mp3/mp3s_folder/test.mp3" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FiuraController#index (for 127.0.0.1 at 2010-09-10 16:58:58) [GET]
+  [4;36;1mNoticia Load (0.2ms)[0m   [0;1mSELECT * FROM `noticias` ORDER BY titular[0m
+Rendering template within layouts/fiura
+Rendering fiura/index
+  [4;35;1mNoticia Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `noticias`[0m
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/fiura]
+>>>>>>> 969af41246e25199194b396ec4c1cc9c25551fe1

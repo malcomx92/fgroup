@@ -105,12 +105,12 @@ text-decoration: underline;
 
 #banner {
 
-  background-image: url('../images/fiura_stencil_paint2.png');
+  background-image: url('../images/fiura_stencil_paint2_rec2.png');
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 20px;
   padding-bottom: 140 px;
-  height: 230px;
+  height: 210px;
   /*border-bottom: 2px solid;*/
   font: small-caps 60px/40px "Arial", sans-serif;
   font-weight: bold;
@@ -120,8 +120,8 @@ text-decoration: underline;
 
 #player {
 position: relative;
-top: 40px;
-right: 10px;
+top: 95px;
+right: 81px;
 }
 #subtitle {
  font: small-caps 20px "Arial", sans-serif;
@@ -129,7 +129,7 @@ right: 10px;
 }
 
 #columnas {
-  background-image: url('../images/background4px.png');
+  background-image: url('../images/background4px2.png');
   background-repeat: repeat;
   border-left: 7px #ff0000;
   border-right: 7px #ff0000;
