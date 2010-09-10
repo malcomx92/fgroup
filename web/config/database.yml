@@ -20,10 +20,9 @@ development:
   reconnect: false
   database: fiura_web
   pool: 5
-  username: root 
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
-
+  username: root
+  password: mario1484
+  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -35,9 +34,8 @@ test:
   database: web_test
   pool: 5
   username: root
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
-
+  password: mario1484
+  socket: /tmp/mysql.sock
 
 production:
   adapter: mysql
@@ -46,6 +44,5 @@ production:
   database: web_production
   pool: 5
   username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
-
+  password: mario1484
+  socket: /tmp/mysql.sock
